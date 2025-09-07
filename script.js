@@ -14,3 +14,4 @@ for(let i = 0; i < numberOfRows; i++){
     }
 }
 
+boardContainer.addEventListener("mouseover", (e)=>e.target.classList.add("hovered-tile"))
