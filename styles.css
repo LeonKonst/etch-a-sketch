@@ -1,0 +1,20 @@
+#board-container{
+    width: 480px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sketch-tile{
+    border: 1px black solid;
+    flex: 1;
+}
+
+
+.grid-row{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
