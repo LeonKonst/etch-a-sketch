@@ -47,7 +47,7 @@ button:hover{
 }
 
 .sketch-tile{
-    border: 1px black solid;
+    border: 1px rgb(153, 153, 153, 30%) solid;
     flex: 1;
     background-color: rgb(255, 255, 255);
 }

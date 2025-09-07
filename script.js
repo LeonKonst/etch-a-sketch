@@ -29,4 +29,18 @@ function createGrid(numberOfTilesPerRow=16){
 
 
 
-boardContainer.addEventListener("mouseover", (e)=>e.target.classList.add("hovered-tile"))
+boardContainer.addEventListener("mouseover", (e)=>{
+    let randomRed = Math.floor(Math.random()*256);
+    let randomGreen = Math.floor(Math.random()*256);
+    let randomBlue = Math.floor(Math.random()*256);
+    if(e.target.classList.contains("sketch-tile")){
+        if(!e.target.style.opacity){
+            e.target.style.opacity = 0.1;
+        } else {
+            let oldOpacity =  e.target.style.opacity
+            e.target.style.opacity = parseFloat(oldOpacity) + 0.1;
+        }
+        e.target.style.backgroundColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+    }
+    }
+)
